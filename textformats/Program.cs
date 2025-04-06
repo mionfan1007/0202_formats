@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -496,75 +497,85 @@ namespace textformats
             Menu1 menu1 = new Menu1();
             List<string[]> values = menu1.GetList();
             bool flag = true;
-            while (flag)
+            try
             {
-                Console.WriteLine("выберите опцию от 1 до 8 (0 чтобы выйти): ");
-                int n = Convert.ToInt32(Console.ReadLine());
-                if (n == 0)
+                while (flag)
                 {
-                    flag = false;
-                    break;
-                }
-                else if (n == 1)
-                {
-                    Console.WriteLine("считывание данных из файла. введите имя файла с расширением: ");
-                    string filename = Console.ReadLine();
-                    values = menu1.ReadFromFile(filename);
-                    menu1.Print(values);
-                }
-                else if (n == 2)
-                {
-                    Console.WriteLine("запись данных в файл. введите имя файла с расширением: ");
-                    string filename = Console.ReadLine();
-                    menu1.WriteInoFile(filename, values);
-                }
-                else if (n == 3)
-                {
-                    Console.WriteLine("вывод данных на экран: ");
-                    menu1.Print(values);
-                }
-                else if (n == 4)
-                {
-                    Console.WriteLine("сортировка данных по параметру. введите параметр от 1 до 5: ");
-                    string parameter = Console.ReadLine();
-                    List<string[]>values1 = menu1.Sort(values,parameter);
-                    menu1.Print(values1);
-                }
-                else if (n == 5)
-                {
-                    Console.WriteLine("поиск данных по подстроке. введите подстроку: ");
-                    string line = Console.ReadLine();
-                    menu1.SearchItem(line, values);
-                }
-                else if (n == 6)
-                {
-                    Console.WriteLine("добавление данных в структуру. введите строку добавляемых данных (через запятую): ");
-                    string line = Console.ReadLine();
-                    string[]splitLine = line.Split(',');
-                    List <string[]> values2 = menu1.AddItem(values, splitLine);
-                    menu1.Print(values2);
-                }
-                else if (n == 7)
-                {
-                    Console.WriteLine("удаление строки из структуры. введите идентификатор удаляемой строки: ");
-                    string line = Console.ReadLine().Trim();
+                    Console.WriteLine("выберите опцию от 1 до 8 (0 чтобы выйти): ");
+                    int n = Convert.ToInt32(Console.ReadLine());
+                    if (n == 0)
+                    {
+                        flag = false;
+                        break;
+                    }
+                    else if (n == 1)
+                    {
+                        Console.WriteLine("считывание данных из файла. введите имя файла с расширением: ");
+                        string filename = Console.ReadLine();
+                        values = menu1.ReadFromFile(filename);
+                        menu1.Print(values);
+                    }
+                    else if (n == 2)
+                    {
+                        Console.WriteLine("запись данных в файл. введите имя файла с расширением: ");
+                        string filename = Console.ReadLine();
+                        menu1.WriteInoFile(filename, values);
+                    }
+                    else if (n == 3)
+                    {
+                        Console.WriteLine("вывод данных на экран: ");
+                        menu1.Print(values);
+                    }
+                    else if (n == 4)
+                    {
+                        Console.WriteLine("сортировка данных по параметру. введите параметр от 1 до 5: ");
+                        string parameter = Console.ReadLine();
+                        List<string[]> values1 = menu1.Sort(values, parameter);
+                        menu1.Print(values1);
+                    }
+                    else if (n == 5)
+                    {
+                        Console.WriteLine("поиск данных по подстроке. введите подстроку: ");
+                        string line = Console.ReadLine();
+                        menu1.SearchItem(line, values);
+                    }
+                    else if (n == 6)
+                    {
+                        Console.WriteLine("добавление данных в структуру. введите строку добавляемых данных (через запятую): ");
+                        string line = Console.ReadLine();
+                        string[] splitLine = line.Split(',');
+                        List<string[]> values2 = menu1.AddItem(values, splitLine);
+                        menu1.Print(values2);
+                    }
+                    else if (n == 7)
+                    {
+                        Console.WriteLine("удаление строки из структуры. введите идентификатор удаляемой строки: ");
+                        string line = Console.ReadLine().Trim();
 
-                    List<string[]> values3 = menu1.RemoveItem(values, line);
-                    menu1.Print(values3);
-                }
-                else if (n == 8)
-                {
-                    Console.WriteLine("изменение строки в структуре. введите идентификатор изменяемой строки: ");
-                    string line = Console.ReadLine().Trim();
-                    List<string[]> values4 = menu1.AlterItem(values, line);
-                    menu1.Print(values4);
+                        List<string[]> values3 = menu1.RemoveItem(values, line);
+                        menu1.Print(values3);
+                    }
+                    else if (n == 8)
+                    {
+                        Console.WriteLine("изменение строки в структуре. введите идентификатор изменяемой строки: ");
+                        string line = Console.ReadLine().Trim();
+                        List<string[]> values4 = menu1.AlterItem(values, line);
+                        menu1.Print(values4);
 
+                    }
+                    else
+                    {
+                        Console.WriteLine("неверный параметр");
+                    }
                 }
-                else
-                {
-                   Console.WriteLine("неверный параметр");
-                }
+               
             }
+            catch
+            {
+                Console.WriteLine("error");
+                throw;
+            }
+            
         }
     }
 }

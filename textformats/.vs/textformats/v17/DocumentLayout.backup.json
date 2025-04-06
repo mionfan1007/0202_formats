@@ -3,10 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\yarek\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u0441\u0438\u0448\u043A\u0430\\textformats_main\\textformats\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yarek\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u0441\u0438\u0448\u043A\u0430\\textformats_testing\\UnitTest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E6F88776-A32E-4168-A9FF-CA8B26F19713}|..\\textformats_testing\\textformats_testing.csproj|c:\\users\\yarek\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u0441\u0438\u0448\u043A\u0430\\textformats_main\\textformats_testing\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54F2E225-A74D-4B67-B4E7-58B5DC6E2ACF}|textformats.csproj|c:\\users\\yarek\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u0441\u0438\u0448\u043A\u0430\\textformats_main\\textformats\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{54F2E225-A74D-4B67-B4E7-58B5DC6E2ACF}|textformats.csproj|C:\\Users\\yarek\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u0441\u0438\u0448\u043A\u0430\\textformats_main\\textformats\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54F2E225-A74D-4B67-B4E7-58B5DC6E2ACF}|textformats.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -23,12 +23,14 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Users\\yarek\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u0441\u0438\u0448\u043A\u0430\\textformats_testing\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "..\\..\\textformats_testing\\UnitTest1.cs",
-              "ToolTip": "C:\\Users\\yarek\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u0441\u0438\u0448\u043A\u0430\\textformats_testing\\UnitTest1.cs",
-              "RelativeToolTip": "..\\..\\textformats_testing\\UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\yarek\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u0441\u0438\u0448\u043A\u0430\\textformats_main\\textformats_testing\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "..\\textformats_testing\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\yarek\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u0441\u0438\u0448\u043A\u0430\\textformats_main\\textformats_testing\\UnitTest1.cs",
+              "RelativeToolTip": "..\\textformats_testing\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T11:46:36.594Z"
+              "WhenOpened": "2025-04-06T17:29:06.98Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -40,8 +42,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAACYBAAAAAAAAAAAYwEoBAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T10:47:16.426Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T10:47:16.426Z"
             }
           ]
         }
